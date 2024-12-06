@@ -1,20 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-style: italic;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.project, .gallery figure {
+    margin: 15px 0;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .gallery figure {
     width: 250px;
     text-align: center;
-    margin: 0; /* Removes default margins around the figure */
-    padding: 10px;
+    margin: 0;
 }
 
 .gallery img {
     max-width: 100%;
-    max-height: 200px; /* Uniform height */
+    max-height: 200px;
     height: auto;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -28,7 +66,14 @@
 }
 
 .gallery figcaption {
-    margin-top: 10px; /* Space between image and description */
-    font-size: 0.9em; /* Slightly smaller font for descriptions */
-    color: #555; /* Softer text color */
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9em;
 }
