@@ -41,30 +41,25 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
+    gap: 15px;
 }
 
 .gallery figure {
-    width: 200px;
-    margin: 15px;
+    width: 250px; /* Set a maximum width for the images */
     text-align: center;
 }
 
 .gallery img {
     width: 100%;
-    height: auto;
+    height: auto; /* Maintain aspect ratio */
     border: 1px solid #ddd;
     border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    transition: transform 0.3s; /* Add a hover effect */
 }
 
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-a:hover {
-    color: #007BFF;
-    text-decoration: underline;
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
 }
 
 footer {
