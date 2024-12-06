@@ -1,4 +1,8 @@
+# Re-importing necessary libraries for file operations after state reset
+from pathlib import Path
 
+# Redefine and write the updated HTML code for the GitHub portfolio
+updated_html_code = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +19,7 @@
 
     <section id="about">
         <h2>Professional Summary</h2>
-        <p>Experienced Customer Care Agent and aspiring Software Developer with a Certificate in Programming from Westmoreland County Community College. Skilled in Python programming, database management, and automated solutions, with hands-on project experience in cryptocurrency trading bots, prediction algorithms, and virtual assistance tools. Strong analytical and problem-solving abilities honed through roles in customer support and bookkeeping, providing a foundation for a transition into software development. Passionate about leveraging technology to streamline processes and deliver innovative solutions.</p>
+        <p>Experienced Customer Care Agent and aspiring Software Developer with a Certificate in Programming from Westmoreland County Community College. Skilled in Python programming, database management, and automated solutions, with hands-on project experience in cryptocurrency trading bots, prediction algorithms, and virtual assistance tools. Strong analytical and problem-solving abilities honed through roles in customer support and bookkeeping, providing a foundation for a transition into software de...
     </section>
 
     <section id="projects">
@@ -34,39 +38,13 @@
         </div>
     </section>
 
-    <section id="3d-modeling">
-        <h2>3D Modeling and Engineering Work</h2>
-        <p>A showcase of James Warnecke's technical projects, including 3D modeling, engineering work, and original designs for the Artemis project.</p>
-        <div class="gallery">
-            <figure>
-                <img src="images/3d_model_house1.jpg" alt="3D model of a house structure">
-                <figcaption>3D Model of Prototype House Structure</figcaption>
-            </figure>
-            <figure>
-                <img src="images/3d_model_house2.jpg" alt="3D model of a house structure variant">
-                <figcaption>3D Model of House Structure Variant</figcaption>
-            </figure>
-            <figure>
-                <img src="images/3d_model_chair.jpg" alt="3D model of a chair">
-                <figcaption>3D Model of Office Chair</figcaption>
-            </figure>
-            <figure>
-                <img src="images/3d_model_ceilingfan.jpg" alt="3D model of a ceiling fan">
-                <figcaption>3D Model of Ceiling Fan Design</figcaption>
-            </figure>
-            <figure>
-                <img src="images/closeup_hardware.jpg" alt="Close-up view of hardware">
-                <figcaption>Close-up View of Hardware Soldering</figcaption>
-            </figure>
-            <figure>
-                <img src="images/artemis_prototype.jpg" alt="Artemis prototype design">
-                <figcaption>Artemis Prototype Components Assembly</figcaption>
-            </figure>
-            <figure>
-                <img src="images/artemis_sketch.jpg" alt="Engineering sketch for Artemis">
-                <figcaption>Engineering Sketch for Artemis Smart Hub Design</figcaption>
-            </figure>
-        </div>
+    <section id="pdfs">
+        <h2>Portfolio Documents</h2>
+        <ul>
+            <li><a href="files/James_Warnecke_Resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="files/James_Letter.docx" target="_blank">Letter of Recommendation (Word Document)</a></li>
+            <li><a href="files/LOR-James.pdf" target="_blank">Letter of Recommendation (PDF)</a></li>
+        </ul>
     </section>
 
     <section id="contact">
@@ -81,3 +59,12 @@
     </footer>
 </body>
 </html>
+"""
+
+# Define the path for the updated HTML file
+updated_html_path = Path("/mnt/data/updated_index.html")
+
+# Save the updated HTML code to a file
+updated_html_path.write_text(updated_html_code)
+
+updated_html_path
