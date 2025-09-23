@@ -2457,9 +2457,10 @@ section {
 
 .version-card-header h4 {
     color: #00E5FF;
-    font-size: 20px;
+    font-size: 22px;
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+    font-weight: bold;
 }
 
 .version-status {
@@ -2503,13 +2504,14 @@ section {
 .spec-label {
     color: #00E5FF;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .spec-value {
-    color: #ccc;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 16px;
     text-align: right;
+    font-weight: 500;
 }
 
 .version-card {
