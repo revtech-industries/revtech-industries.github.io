@@ -2172,15 +2172,16 @@ section {
 
 /* Blueprint Showcase Styling */
 .blueprint-showcase {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 0px;
-    padding: 15px;
-    background: transparent;
-    border-radius: 25px;
-    border: none;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+    margin-bottom: 0px !important;
+    padding: 15px !important;
+    background: transparent !important;
+    border-radius: 25px !important;
+    border: none !important;
+    align-items: center !important;
+    width: 100% !important;
 }
 
 .blueprint-main {
@@ -2357,12 +2358,13 @@ section {
 }
 
 .versions-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 20px;
-    justify-items: center;
-    align-items: start;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+    padding: 20px !important;
+    justify-items: center !important;
+    align-items: start !important;
+    width: 100% !important;
 }
 
 .version-card-blueprint {
