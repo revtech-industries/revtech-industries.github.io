@@ -2173,20 +2173,22 @@ section {
 /* Blueprint Showcase Styling */
 .blueprint-showcase {
     display: flex;
+    flex-direction: column;
     gap: 30px;
     margin-bottom: 0px;
     padding: 15px;
     background: transparent;
     border-radius: 25px;
     border: none;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .blueprint-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 2;
+    width: 100%;
+    max-width: 800px;
 }
 
 .blueprint-container h3 {
@@ -2338,7 +2340,8 @@ section {
 
 /* Versions Showcase */
 .versions-showcase {
-    flex: 1;
+    width: 100%;
+    max-width: 900px;
 }
 
 .versions-showcase h3 {
@@ -2351,7 +2354,7 @@ section {
 
 .versions-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 10px;
 }
