@@ -2399,10 +2399,100 @@ section {
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
 }
 
-.versions-container {
-    display: flex;
-    flex-direction: column;
+.versions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    padding: 20px;
+}
+
+.version-card-blueprint {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border-radius: 20px;
+    padding: 25px;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.version-card-blueprint::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00E5FF, #0066CC);
+}
+
+.version-card-blueprint:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 229, 255, 0.2);
+    border-color: #00E5FF;
+}
+
+.version-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.version-card-header h4 {
+    color: #00E5FF;
+    font-size: 20px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+.version-status {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.version-status {
+    background: linear-gradient(45deg, #00E5FF, #0066CC);
+    color: white;
+}
+
+.version-status.enhanced {
+    background: linear-gradient(45deg, #ff0080, #00ff88);
+}
+
+.version-status.future {
+    background: linear-gradient(45deg, #00ff88, #00f5ff);
+}
+
+.version-specs {
+    margin-top: 20px;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    color: #00E5FF;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.spec-value {
+    color: #ccc;
+    font-size: 14px;
+    text-align: right;
 }
 
 .version-card {
