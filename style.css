@@ -2367,11 +2367,10 @@ section {
     width: 100% !important;
     max-width: 1200px !important;
     margin: 0 auto !important;
-    background: rgba(0, 255, 0, 0.1) !important; /* Debug: green background */
 }
 
 .version-card-blueprint {
-    background: rgba(255, 0, 0, 0.1) !important; /* Debug: red background */
+    background: transparent;
     border-radius: 15px;
     padding: 20px;
     border: 2px solid #00E5FF;
