@@ -2341,7 +2341,11 @@ section {
 /* Versions Showcase */
 .versions-showcase {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .versions-showcase h3 {
@@ -2355,8 +2359,10 @@ section {
 .versions-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 10px;
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+    align-items: start;
 }
 
 .version-card-blueprint {
@@ -2371,6 +2377,10 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+    max-width: 280px;
+    min-height: 300px;
+    justify-content: space-between;
 }
 
 .version-card-blueprint::before {
