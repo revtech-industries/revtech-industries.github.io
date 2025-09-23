@@ -1,6 +1,6 @@
-/* Modern Portfolio CSS - James Warnecke */
+/* Modern Portfolio CSS - REVTECH INDUSTRIES */
 
-/* CSS Variables for futuristic theming */
+/* CSS Variables for cyber/futuristic theming */
 :root {
     --primary-color: #00f5ff;
     --primary-dark: #0099cc;
@@ -1700,11 +1700,7 @@ section {
     }
 }
 
-/* Loading animation */
-.loading {
-    opacity: 0;
-    animation: fadeIn 0.5s ease forwards;
-}
+/* Loading animation removed - website loads immediately */
 
 @keyframes fadeIn {
     to {
@@ -1871,40 +1867,7 @@ section {
     100% { transform: translate(50px, 50px); }
 }
 
-/* Loading animation */
-.loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--gradient-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.5s ease;
-}
-
-.loading-screen.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.loading-spinner {
-    width: 60px;
-    height: 60px;
-    border: 3px solid transparent;
-    border-top: 3px solid var(--primary-color);
-    border-right: 3px solid var(--secondary-color);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+/* Loading screen removed - website loads immediately */
 
 /* Typewriter effect */
 .typewriter {

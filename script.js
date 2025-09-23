@@ -1,6 +1,10 @@
-// Modern Portfolio JavaScript - James Warnecke
+// Modern Portfolio JavaScript - REVTECH INDUSTRIES
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Force body to be visible immediately
+    document.body.style.opacity = '1';
+    document.body.style.visibility = 'visible';
+    console.log('Website loading - body made visible');
     // Mobile Navigation Toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -136,8 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
         imageObserver.observe(img);
     });
     
-    // Add loading animation to page
-    document.body.classList.add('loading');
+    // Website loaded successfully - no loading screen needed
     
     // Contact form validation (if you add a form later)
     function validateEmail(email) {
@@ -421,6 +424,8 @@ Sent from REVTECH INDUSTRIES Portfolio Website
             }, 3000);
         });
     }
+    
+    // Loading screen removed - website loads immediately
     
     console.log('REVTECH INDUSTRIES website loaded successfully! 🚀');
 });
