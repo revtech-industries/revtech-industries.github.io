@@ -104,16 +104,14 @@
     <section id="artemis-header" class="artemis-header">
         <div class="container">
             <div class="logo-container">
-                <div class="artemis-logo" style="width: 200px; height: 200px; background: linear-gradient(45deg, #00f5ff, #ff0080, #00ff88); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
-                    <span style="font-size: 4rem; font-weight: bold; color: white;">A</span>
-                </div>
+                <img src="images/artemis_logo.jpg" alt="Artemis Logo" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 0 auto; display: block; cursor: pointer;" onclick="window.open('images/artemis_logo.jpg', '_blank')">
                 <div class="logo-text">
                     <h2 class="logo-title">ARTEMIS</h2>
                     <p class="logo-subtitle">AI-Enabled Multi-Sensor Connected Mental Health Device</p>
                     <div class="logo-badges">
-                        <span class="badge" style="background: linear-gradient(45deg, #00f5ff, #ff0080); color: white; padding: 8px 16px; border-radius: 20px; margin: 5px; display: inline-block; cursor: pointer;">V1</span>
-                        <span class="badge" style="background: linear-gradient(45deg, #ff0080, #00ff88); color: white; padding: 8px 16px; border-radius: 20px; margin: 5px; display: inline-block; cursor: pointer;">V2</span>
-                        <span class="badge" style="background: linear-gradient(45deg, #00ff88, #00f5ff); color: white; padding: 8px 16px; border-radius: 20px; margin: 5px; display: inline-block; cursor: pointer;">V3</span>
+                        <span class="badge clickable-badge" style="background: linear-gradient(45deg, #00f5ff, #ff0080); color: white; padding: 8px 16px; border-radius: 20px; margin: 5px; display: inline-block; cursor: pointer;" onclick="document.getElementById('portfolio').scrollIntoView()">V1</span>
+                        <span class="badge clickable-badge" style="background: linear-gradient(45deg, #ff0080, #00ff88); color: white; padding: 8px 16px; border-radius: 20px; margin: 5px; display: inline-block; cursor: pointer;" onclick="document.getElementById('portfolio').scrollIntoView()">V2</span>
+                        <span class="badge clickable-badge" style="background: linear-gradient(45deg, #00ff88, #00f5ff); color: white; padding: 8px 16px; border-radius: 20px; margin: 5px; display: inline-block; cursor: pointer;" onclick="document.getElementById('portfolio').scrollIntoView()">V3</span>
                     </div>
                 </div>
             </div>
@@ -300,7 +298,7 @@
                 <div class="versions-showcase">
                     <h3>Evolution Timeline</h3>
                     <div class="versions-container">
-                        <div class="version-card">
+                        <div class="version-card clickable-image">
                             <div class="version-image-container">
                                 <img src="images/v1_prototype.svg" alt="V1 Hardware Prototype" style="width: 100%; max-width: 200px; height: auto;">
                             </div>
@@ -310,27 +308,9 @@
                             </div>
                         </div>
                         
-                        <div class="version-card">
-                            <div class="version-device-large v2-large">
-                                <div class="device-body-large">
-                                    <div class="device-top-large"></div>
-                                    <div class="device-main-large">
-                                        <div class="circuit-board-large">
-                                            <div class="led-large blue"></div>
-                                            <div class="led-large green"></div>
-                                            <div class="component-large enhanced"></div>
-                                        </div>
-                                    </div>
-                                    <div class="device-base-large"></div>
-                                </div>
-                                <div class="side-module-large left">
-                                    <div class="sensor-large advanced"></div>
-                                    <div class="sensor-large advanced"></div>
-                                </div>
-                                <div class="side-module-large right">
-                                    <div class="sensor-large advanced"></div>
-                                    <div class="sensor-large advanced"></div>
-                                </div>
+                        <div class="version-card clickable-image">
+                            <div class="version-image-container">
+                                <img src="images/v1_prototype.svg" alt="V2 Enhanced Prototype" style="width: 100%; max-width: 200px; height: auto; filter: hue-rotate(120deg) brightness(1.2);">
                             </div>
                             <div class="version-info">
                                 <h4>V2 Enhanced</h4>
@@ -338,27 +318,9 @@
                             </div>
                         </div>
                         
-                        <div class="version-card">
-                            <div class="version-device-large v3-large">
-                                <div class="device-body-large">
-                                    <div class="device-top-large"></div>
-                                    <div class="device-main-large">
-                                        <div class="circuit-board-large">
-                                            <div class="led-large cyan"></div>
-                                            <div class="led-large purple"></div>
-                                            <div class="component-large futuristic"></div>
-                                        </div>
-                                    </div>
-                                    <div class="device-base-large"></div>
-                                </div>
-                                <div class="side-module-large left">
-                                    <div class="sensor-large futuristic"></div>
-                                    <div class="sensor-large futuristic"></div>
-                                </div>
-                                <div class="side-module-large right">
-                                    <div class="sensor-large futuristic"></div>
-                                    <div class="sensor-large futuristic"></div>
-                                </div>
+                        <div class="version-card clickable-image">
+                            <div class="version-image-container">
+                                <img src="images/v1_prototype.svg" alt="V3 Future Prototype" style="width: 100%; max-width: 200px; height: auto; filter: hue-rotate(240deg) brightness(1.4) saturate(1.5);">
                             </div>
                             <div class="version-info">
                                 <h4>V3 Future</h4>
