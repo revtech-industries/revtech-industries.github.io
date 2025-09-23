@@ -2077,6 +2077,165 @@ section {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
+/* V1 Prototype Styling */
+.v1-prototype-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.prototype-device {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.device-body {
+    position: relative;
+    width: 80px;
+    height: 140px;
+    margin: 0 auto;
+}
+
+.device-top {
+    width: 80px;
+    height: 20px;
+    background: linear-gradient(180deg, #333, #444);
+    border-radius: 40px 40px 0 0;
+    position: relative;
+}
+
+.device-top::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: #555;
+    border-radius: 1px;
+}
+
+.device-main {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(180deg, #222, #333);
+    position: relative;
+}
+
+.circuit-board {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: #111;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.led {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+.led.green {
+    top: 8px;
+    left: 8px;
+    background: #00ff00;
+    box-shadow: 0 0 6px #00ff00;
+}
+
+.led.red {
+    top: 8px;
+    right: 8px;
+    background: #ff0000;
+    box-shadow: 0 0 6px #ff0000;
+}
+
+.component {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 15px;
+    background: linear-gradient(135deg, #666, #999);
+    border-radius: 2px;
+}
+
+.device-base {
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(180deg, #333, #222);
+    border-radius: 0 0 40px 40px;
+    position: relative;
+}
+
+.device-base::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 8px;
+    background: linear-gradient(90deg, #444, #666);
+    border-radius: 4px;
+}
+
+.side-module {
+    position: absolute;
+    top: 30px;
+    width: 15px;
+    height: 60px;
+    background: linear-gradient(180deg, #333, #444);
+    border-radius: 8px;
+}
+
+.side-module.left {
+    left: -10px;
+}
+
+.side-module.right {
+    right: -10px;
+}
+
+.sensor {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #666;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sensor:first-child {
+    top: 12px;
+}
+
+.sensor:last-child {
+    bottom: 12px;
+}
+
+.prototype-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00E5FF;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
