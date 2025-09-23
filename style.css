@@ -2263,6 +2263,15 @@ section {
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
 }
 
+.blueprint-container img {
+    width: 100% !important;
+    height: 600px !important;
+    object-fit: contain !important;
+    border: 3px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+}
+
 .blueprint-diagram {
     position: relative;
     width: 100%;
