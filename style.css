@@ -2176,9 +2176,9 @@ section {
     gap: 30px;
     margin-bottom: 0px;
     padding: 15px;
-    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    background: transparent;
     border-radius: 25px;
-    border: 2px solid #333;
+    border: none;
     align-items: flex-start;
 }
 
