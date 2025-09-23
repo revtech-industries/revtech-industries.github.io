@@ -2724,3 +2724,341 @@ section {
         box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
     }
 }
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+   ======================================== */
+
+/* Mobile-first responsive breakpoints */
+@media (max-width: 768px) {
+    /* Container adjustments */
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Navigation */
+    .navbar {
+        padding: 10px 15px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .nav-links a {
+        padding: 8px 15px;
+        text-align: center;
+        border-radius: 8px;
+        background: rgba(0, 245, 255, 0.1);
+        border: 1px solid rgba(0, 245, 255, 0.3);
+    }
+    
+    /* Hero section */
+    .hero {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+    
+    /* Artemis header */
+    .artemis-header {
+        padding: 40px 0;
+    }
+    
+    .logo-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .logo-container img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    
+    .logo-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .logo-subtitle {
+        font-size: 1rem !important;
+        margin: 15px 0 !important;
+    }
+    
+    .logo-badges {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .badge {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+        margin: 5px !important;
+    }
+    
+    /* Blueprint showcase */
+    .blueprint-showcase {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    
+    .blueprint-container img {
+        height: 300px !important;
+    }
+    
+    .versions-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 15px !important;
+    }
+    
+    .version-card-blueprint {
+        max-width: 100% !important;
+        min-height: 250px !important;
+    }
+    
+    /* Portfolio grid */
+    .portfolio-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 20px !important;
+    }
+    
+    .portfolio-card {
+        height: auto !important;
+        min-height: 300px !important;
+    }
+    
+    /* Downloads section */
+    .downloads {
+        padding: 40px 0;
+    }
+    
+    .downloads-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+    
+    .download-card {
+        padding: 25px;
+    }
+    
+    .download-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .download-links .btn {
+        width: 100%;
+        margin: 0;
+    }
+    
+    /* Contact section */
+    .contact {
+        padding: 40px 0;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .contact-info {
+        width: 100%;
+    }
+    
+    .contact-form {
+        width: 100%;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 15px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 30px 0;
+        text-align: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-section {
+        width: 100%;
+    }
+    
+    /* Testimonials */
+    .testimonials {
+        padding: 40px 0;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    /* Company intro */
+    .company-intro {
+        padding: 40px 0;
+    }
+    
+    .intro-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .intro-text {
+        width: 100%;
+    }
+    
+    .intro-image {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .logo-title {
+        font-size: 2rem !important;
+    }
+    
+    .logo-container img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .download-card {
+        padding: 20px;
+    }
+    
+    .portfolio-card {
+        min-height: 250px !important;
+    }
+    
+    .version-card-blueprint {
+        min-height: 200px !important;
+    }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .artemis-header {
+        padding: 30px 0;
+    }
+    
+    .logo-container {
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .logo-container img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        min-height: 44px; /* iOS recommended touch target size */
+        padding: 12px 20px;
+    }
+    
+    .nav-links a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .portfolio-card,
+    .version-card-blueprint,
+    .download-card {
+        cursor: pointer;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .btn:hover,
+    .portfolio-card:hover,
+    .version-card-blueprint:hover {
+        transform: none;
+        box-shadow: var(--shadow-md);
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-container img,
+    .blueprint-container img,
+    .version-image-container img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
