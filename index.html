@@ -104,7 +104,7 @@
     <section id="artemis-header" class="artemis-header">
         <div class="container">
             <div class="logo-container">
-                <img src="images/artemis_logo.jpg" alt="Artemis Logo" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 0 auto; display: block; cursor: pointer;" onclick="window.open('images/artemis_logo.jpg', '_blank')">
+                <img src="images/artemis_logo.jpg" alt="Artemis Logo" style="width: 200px; height: 200px; border-radius: 50%; object-fit: contain; margin: 0 auto; display: block; cursor: pointer; background: transparent;" onclick="window.open('images/artemis_logo.jpg', '_blank')">
                 <div class="logo-text">
                     <h2 class="logo-title">ARTEMIS</h2>
                     <p class="logo-subtitle">AI-Enabled Multi-Sensor Connected Mental Health Device</p>
@@ -291,40 +291,82 @@
                 <div class="blueprint-main">
                     <div class="blueprint-container">
                         <h3>System Architecture Blueprint</h3>
-                        <img src="images/blueprint_diagram.svg" alt="System Architecture Blueprint" style="width: 100%; max-width: 400px; height: auto; border-radius: 12px;">
+                        <img src="images/micro_computer_assembly.svg" alt="System Architecture Blueprint" style="width: 100%; max-width: 500px; height: auto; border-radius: 12px; cursor: pointer;" onclick="window.open('images/micro_computer_assembly.svg', '_blank')">
                     </div>
                 </div>
                 
                 <div class="versions-showcase">
                     <h3>Evolution Timeline</h3>
-                    <div class="versions-container">
-                        <div class="version-card clickable-image">
-                            <div class="version-image-container">
-                                <img src="images/v1_prototype.svg" alt="V1 Hardware Prototype" style="width: 100%; max-width: 200px; height: auto;">
-                            </div>
-                            <div class="version-info">
+                    <div class="versions-grid">
+                        <div class="version-card-blueprint clickable-image">
+                            <div class="version-card-header">
                                 <h4>V1 Prototype</h4>
-                                <p>Modular cylindrical design with basic sensors and circuit board</p>
+                                <div class="version-status">Current</div>
+                            </div>
+                            <div class="version-image-container">
+                                <img src="images/v1_prototype.svg" alt="V1 Hardware Prototype" style="width: 100%; max-width: 250px; height: auto;">
+                            </div>
+                            <div class="version-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Design:</span>
+                                    <span class="spec-value">Modular Cylindrical</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Sensors:</span>
+                                    <span class="spec-value">Basic Multi-Sensor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Processing:</span>
+                                    <span class="spec-value">Circuit Board</span>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="version-card clickable-image">
-                            <div class="version-image-container">
-                                <img src="images/v1_prototype.svg" alt="V2 Enhanced Prototype" style="width: 100%; max-width: 200px; height: auto; filter: hue-rotate(120deg) brightness(1.2);">
-                            </div>
-                            <div class="version-info">
+                        <div class="version-card-blueprint clickable-image">
+                            <div class="version-card-header">
                                 <h4>V2 Enhanced</h4>
-                                <p>Improved AI processing with advanced sensor integration</p>
+                                <div class="version-status enhanced">Enhanced</div>
+                            </div>
+                            <div class="version-image-container">
+                                <img src="images/v1_prototype.svg" alt="V2 Enhanced Prototype" style="width: 100%; max-width: 250px; height: auto; filter: hue-rotate(120deg) brightness(1.2);">
+                            </div>
+                            <div class="version-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Design:</span>
+                                    <span class="spec-value">Advanced Modular</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Sensors:</span>
+                                    <span class="spec-value">Enhanced Integration</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Processing:</span>
+                                    <span class="spec-value">Improved AI</span>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="version-card clickable-image">
-                            <div class="version-image-container">
-                                <img src="images/v1_prototype.svg" alt="V3 Future Prototype" style="width: 100%; max-width: 200px; height: auto; filter: hue-rotate(240deg) brightness(1.4) saturate(1.5);">
-                            </div>
-                            <div class="version-info">
+                        <div class="version-card-blueprint clickable-image">
+                            <div class="version-card-header">
                                 <h4>V3 Future</h4>
-                                <p>Holographic interface with multi-sensor array and AI integration</p>
+                                <div class="version-status future">Future</div>
+                            </div>
+                            <div class="version-image-container">
+                                <img src="images/v1_prototype.svg" alt="V3 Future Prototype" style="width: 100%; max-width: 250px; height: auto; filter: hue-rotate(240deg) brightness(1.4) saturate(1.5);">
+                            </div>
+                            <div class="version-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Design:</span>
+                                    <span class="spec-value">Holographic Interface</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Sensors:</span>
+                                    <span class="spec-value">Multi-Sensor Array</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Processing:</span>
+                                    <span class="spec-value">Full AI Integration</span>
+                                </div>
                             </div>
                         </div>
                     </div>
