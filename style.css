@@ -1935,3 +1935,23 @@ section {
         font-size: 1rem;
     }
 }
+
+/* PIN Notice Styling */
+.pin-notice {
+    background: linear-gradient(135deg, #00E5FF20, #0066CC20);
+    border: 1px solid #00E5FF;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 2rem;
+    color: #00E5FF;
+}
+
+.pin-notice p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.pin-notice i {
+    margin-right: 8px;
+    color: #00E5FF;
+}
