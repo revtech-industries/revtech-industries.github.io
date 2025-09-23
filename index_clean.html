@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVTECH INDUSTRIES - Artemis AI Development</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+            color: white;
+            font-family: 'Inter', Arial, sans-serif;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00f5ff, #ff0080, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #00f5ff, #ff0080);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        .section {
+            padding: 80px 0;
+            border-bottom: 1px solid rgba(0, 245, 255, 0.3);
+        }
+        
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #00f5ff;
+        }
+        
+        .downloads {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .download-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 245, 255, 0.3);
+            text-align: center;
+        }
+        
+        .download-card h3 {
+            color: #00f5ff;
+            margin-bottom: 15px;
+        }
+        
+        .debug {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 9999;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="debug">
+        REVTECH INDUSTRIES - WORKING!
+    </div>
+    
+    <div class="container">
+        <section class="hero">
+            <h1>REVTECH INDUSTRIES</h1>
+            <p>Pioneering AI-Enabled Mental Health Technology</p>
+            <p>Leading the future of connected mental health devices with our revolutionary Artemis AI platform.</p>
+            <a href="#downloads" class="btn">Download Artemis AI</a>
+            <a href="#contact" class="btn">Partner With Us</a>
+        </section>
+        
+        <section class="section">
+            <h2>About REVTECH INDUSTRIES</h2>
+            <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                REVTECH INDUSTRIES is a cutting-edge technology company specializing in AI-enabled mental health devices. 
+                Founded by James Warnecke, a Certified IT Field Agent and Software Developer, we are pioneering 
+                the future of connected health technology through our revolutionary Artemis AI platform.
+            </p>
+        </section>
+        
+        <section id="downloads" class="section">
+            <h2>Download Artemis AI</h2>
+            <div class="downloads">
+                <div class="download-card">
+                    <h3>📱 Android APK</h3>
+                    <p>Universal APK for all Android devices</p>
+                    <a href="downloads/artemis_ai_android_universal.apk" class="btn" download>Download APK</a>
+                    <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.7;">
+                        ✅ Protected & Obfuscated<br>
+                        ✅ Android 5.0+
+                    </p>
+                </div>
+                
+                <div class="download-card">
+                    <h3>📱 Android ARM64</h3>
+                    <p>Optimized for ARM64 devices</p>
+                    <a href="downloads/artemis_ai_android_arm64.apk" class="btn" download>Download ARM64</a>
+                    <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.7;">
+                        ✅ Protected & Obfuscated<br>
+                        ✅ High Performance
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact REVTECH INDUSTRIES</h2>
+            <div style="text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 20px;">Get in touch for partnerships, licensing, or collaboration opportunities.</p>
+                <p><strong>Email:</strong> <a href="mailto:warnecke.james@outlook.com" style="color: #00f5ff;">warnecke.james@outlook.com</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/ghost-tech-alt" style="color: #00f5ff;" target="_blank">github.com/ghost-tech-alt</a></p>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        console.log('REVTECH INDUSTRIES website loaded successfully!');
+        
+        // Force body to be visible
+        document.body.style.opacity = '1';
+        document.body.style.visibility = 'visible';
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
