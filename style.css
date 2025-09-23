@@ -2238,21 +2238,21 @@ section {
 
 /* Blueprint Showcase Styling */
 .blueprint-showcase {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 50px;
+    display: flex;
+    gap: 40px;
     margin-bottom: 40px;
-    padding: 40px;
+    padding: 30px;
     background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
     border-radius: 25px;
     border: 2px solid #333;
-    min-height: auto;
+    align-items: flex-start;
 }
 
 .blueprint-main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 2;
 }
 
 .blueprint-container h3 {
@@ -2403,6 +2403,10 @@ section {
 }
 
 /* Versions Showcase */
+.versions-showcase {
+    flex: 1;
+}
+
 .versions-showcase h3 {
     color: #00E5FF;
     font-size: 24px;
