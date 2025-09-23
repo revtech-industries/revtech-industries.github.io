@@ -323,5 +323,104 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    console.log('Portfolio website loaded successfully! 🚀');
+    // Performance optimizations
+    const optimizePerformance = () => {
+        // Lazy load images
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.style.opacity = '0';
+                    img.style.transition = 'opacity 0.3s ease';
+                    
+                    img.onload = function() {
+                        img.style.opacity = '1';
+                    };
+                    
+                    observer.unobserve(img);
+                }
+            });
+        });
+        
+        images.forEach(img => imageObserver.observe(img));
+        
+        // Preload critical resources
+        const preloadResources = () => {
+            const criticalImages = [
+                'images/artemis_logo.jpg',
+                'images/micro_computer_assembly.jpg'
+            ];
+            
+            criticalImages.forEach(src => {
+                const link = document.createElement('link');
+                link.rel = 'preload';
+                link.as = 'image';
+                link.href = src;
+                document.head.appendChild(link);
+            });
+        };
+        
+        preloadResources();
+        
+        // Debounce scroll events for better performance
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            scrollTimeout = setTimeout(() => {
+                // Scroll handling code here
+            }, 10);
+        });
+    };
+    
+    optimizePerformance();
+    
+    // Contact form handling
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+            
+            // Create email body
+            const emailBody = `
+New Partnership Inquiry from REVTECH INDUSTRIES Website:
+
+Name: ${data.name}
+Email: ${data.email}
+Company: ${data.company || 'Not provided'}
+Inquiry Type: ${data.inquiry}
+
+Message:
+${data.message}
+
+---
+Sent from REVTECH INDUSTRIES Portfolio Website
+            `;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:warnecke.james@outlook.com?subject=REVTECH INDUSTRIES Partnership Inquiry - ${data.inquiry}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            const button = contactForm.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            button.textContent = 'Email Client Opened!';
+            button.style.background = 'var(--success-color)';
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = '';
+                contactForm.reset();
+            }, 3000);
+        });
+    }
+    
+    console.log('REVTECH INDUSTRIES website loaded successfully! 🚀');
 });
