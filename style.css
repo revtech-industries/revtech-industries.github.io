@@ -1985,47 +1985,96 @@ section {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* Version Badges Container */
-.version-badges-container {
+/* Concept Versions Display */
+.concept-versions-display {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
     background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
     border-radius: 12px;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
 }
 
-.version-badge {
-    padding: 20px 30px;
-    border-radius: 25px;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+.concept-version {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-width: 80px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.version-badge:hover {
+.concept-version:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-.version-badge.v1 {
+.version-device {
+    width: 60px;
+    height: 100px;
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.version-device::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #00E5FF, #0066CC);
+    opacity: 0.8;
+}
+
+.version-device::after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 8px;
+    background: linear-gradient(90deg, #333, #666);
+    border-radius: 4px;
+}
+
+.v1-device {
+    background: linear-gradient(180deg, #333, #666);
+    box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+}
+
+.v1-device::before {
     background: linear-gradient(45deg, #00f5ff, #ff0080);
 }
 
-.version-badge.v2 {
+.v2-device {
+    background: linear-gradient(180deg, #444, #777);
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+}
+
+.v2-device::before {
     background: linear-gradient(45deg, #ff0080, #00ff88);
 }
 
-.version-badge.v3 {
+.v3-device {
+    background: linear-gradient(180deg, #555, #888);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.v3-device::before {
     background: linear-gradient(45deg, #00ff88, #00f5ff);
+}
+
+.version-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 @keyframes pulse {
