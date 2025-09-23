@@ -1955,3 +1955,87 @@ section {
     margin-right: 8px;
     color: #00E5FF;
 }
+
+/* Placeholder Logo Styling */
+.placeholder-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border-radius: 12px;
+}
+
+.artemis-logo-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00E5FF, #0066CC);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.logo-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Version Badges Container */
+.version-badges-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border-radius: 12px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.version-badge {
+    padding: 20px 30px;
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.version-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.version-badge.v1 {
+    background: linear-gradient(45deg, #00f5ff, #ff0080);
+}
+
+.version-badge.v2 {
+    background: linear-gradient(45deg, #ff0080, #00ff88);
+}
+
+.version-badge.v3 {
+    background: linear-gradient(45deg, #00ff88, #00f5ff);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 50px rgba(0, 229, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+    }
+}
