@@ -2357,10 +2357,10 @@ section {
 }
 
 .version-card-blueprint {
-    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    background: transparent;
     border-radius: 15px;
     padding: 20px;
-    border: 2px solid #333;
+    border: 2px solid #00E5FF;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
