@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Warnecke - Software Developer & AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">James Warnecke</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">James Warnecke</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Software Developer & AI Engineer
+                </p>
+                <p class="hero-description">
+                    Experienced IT Professional with expertise in Python, AI development, and automated solutions. 
+                    Passionate about creating innovative software that solves real-world problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-code"></i>
+                    <span>Full-Stack Development</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-robot"></i>
+                    <span>AI & Machine Learning</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-cube"></i>
+                    <span>3D Modeling</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a Certified IT Field Agent and aspiring Software Developer with a Certificate in Programming 
+                        from Westmoreland County Community College. My journey in technology spans from hands-on IT support 
+                        to developing sophisticated AI-powered applications and trading algorithms.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-code"></i> Programming</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>HTML/CSS</li>
+                                <li>Database Management</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3><i class="fas fa-brain"></i> AI & Automation</h3>
+                            <ul>
+                                <li>Machine Learning</li>
+                                <li>Trading Algorithms</li>
+                                <li>Prediction Models</li>
+                                <li>Virtual Assistants</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                            <ul>
+                                <li>3D Modeling</li>
+                                <li>API Integration</li>
+                                <li>Automated Solutions</li>
+                                <li>System Administration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Cryptocurrency Trading Bot</h3>
+                    <p>Automated trading bot using Binance API with RSI indicators and trailing stop-loss features. 
+                    Implements strategic buy-low, sell-high algorithms with controlled spending limits.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Binance API</span>
+                        <span class="tech-tag">RSI Analysis</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-dice"></i>
+                    </div>
+                    <h3>Lottery Prediction Model</h3>
+                    <p>Advanced data science project analyzing lottery patterns and generating predictive insights. 
+                    Uses historical data analysis and machine learning techniques to identify trends.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Data Science</span>
+                        <span class="tech-tag">ML Algorithms</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Artemis Assistant</h3>
+                    <p>Comprehensive virtual assistant platform designed for task automation and user interaction. 
+                    Features smart hub integration and mobile app connectivity.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">AI Integration</span>
+                        <span class="tech-tag">Mobile Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">3D Modeling & Engineering Work</h2>
+            <p class="section-subtitle">A showcase of technical projects, 3D modeling, and original designs</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/3d_model_house1.jpg" alt="3D Model of Prototype House Structure">
+                        <div class="portfolio-overlay">
+                            <h3>Prototype House Structure</h3>
+                            <p>3D architectural modeling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/3d_model_house2.jpg" alt="3D Model of a House">
+                        <div class="portfolio-overlay">
+                            <h3>Residential House Design</h3>
+                            <p>Complete 3D house modeling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/3d_model_chair.jpg" alt="3D Model of a Chair">
+                        <div class="portfolio-overlay">
+                            <h3>Furniture Design</h3>
+                            <p>3D chair modeling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/3d_model_ceilingfan.jpg" alt="3D Model of a Ceiling Fan">
+                        <div class="portfolio-overlay">
+                            <h3>Ceiling Fan Design</h3>
+                            <p>Mechanical 3D modeling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/artemis_sketch.jpg" alt="Engineering sketch for Artemis">
+                        <div class="portfolio-overlay">
+                            <h3>Artemis Smart Hub</h3>
+                            <p>Engineering design sketch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/ARTEMIS_PROTOTYPE.jpg" alt="Completed Artemis Prototype">
+                        <div class="portfolio-overlay">
+                            <h3>Artemis Prototype</h3>
+                            <p>Completed smart hub prototype</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/ARTEMIS_APP.jpg" alt="Artemis SmartHub App">
+                        <div class="portfolio-overlay">
+                            <h3>Artemis Mobile App</h3>
+                            <p>Smart hub mobile application</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="documents">
+        <div class="container">
+            <h2 class="section-title">Portfolio Documents</h2>
+            <div class="documents-grid">
+                <a href="files/James_Warnecke_Resume.pdf" target="_blank" class="document-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Resume</h3>
+                    <p>Professional resume and experience</p>
+                </a>
+                <a href="files/James_Letter.pdf" target="_blank" class="document-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Letter of Recommendation</h3>
+                    <p>Professional recommendation letter</p>
+                </a>
+                <a href="files/LOR-James.pdf" target="_blank" class="document-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Additional Recommendation</h3>
+                    <p>Additional professional reference</p>
+                </a>
+                <a href="files/Certificate.pdf" target="_blank" class="document-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>IT Pro Certificate</h3>
+                    <p>Professional IT certification</p>
+                </a>
+                <a href="files/Office_Pro_Certificate.pdf" target="_blank" class="document-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Office Pro Certificate</h3>
+                    <p>Microsoft Office certification</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's work together to bring your ideas to life</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:warnecke.james@outlook.com">warnecke.james@outlook.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/ghost-tech-alt" target="_blank">github.com/ghost-tech-alt</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h3>Portfolio</h3>
+                            <a href="https://ghost-tech-alt.github.io" target="_blank">ghost-tech-alt.github.io</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 James Warnecke. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/ghost-tech-alt" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:warnecke.james@outlook.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
