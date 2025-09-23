@@ -130,7 +130,7 @@
                     <!-- Choose one of the options below -->
                     
                     <!-- Option 1: Direct MP4 file -->
-                    <video id="introVideo" class="intro-video" controls poster="images/artemis_logo.jpg">
+                    <video id="introVideo" class="intro-video" controls>
                         <source src="videos/introduction-video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -290,7 +290,11 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="images/artemis_logo.jpg" alt="Artemis Logo Design" loading="lazy">
+                        <div class="placeholder-logo">
+                            <div class="artemis-logo-placeholder">
+                                <span class="logo-text">A</span>
+                            </div>
+                        </div>
                         <div class="portfolio-overlay">
                             <h3>Artemis Brand Identity</h3>
                             <p>Professional logo design with metallic finish</p>
@@ -308,7 +312,11 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="images/artemis_concept_collage.jpg" alt="Artemis Concept Versions V1, V2, V3" loading="lazy">
+                        <div class="version-badges-container">
+                            <div class="version-badge v1">V1</div>
+                            <div class="version-badge v2">V2</div>
+                            <div class="version-badge v3">V3</div>
+                        </div>
                         <div class="portfolio-overlay">
                             <h3>Design Evolution</h3>
                             <p>Concept V1, V2, and V3 iterations</p>
@@ -529,24 +537,10 @@
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h3>GitHub</h3>
-                                <a href="https://github.com/ghost-tech-alt" target="_blank">github.com/ghost-tech-alt</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
                             <i class="fab fa-linkedin"></i>
                             <div>
                                 <h3>LinkedIn</h3>
                                 <a href="https://www.linkedin.com/in/james-warnecke-17b062198/" target="_blank">linkedin.com/in/james-warnecke-17b062198</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-globe"></i>
-                            <div>
-                                <h3>Portfolio</h3>
-                                <a href="https://ghost-tech-alt.github.io" target="_blank">ghost-tech-alt.github.io</a>
                             </div>
                         </div>
                     </div>
@@ -593,9 +587,6 @@
                 <div class="footer-main">
                     <p>&copy; 2024 REVTECH INDUSTRIES. All rights reserved.</p>
                     <div class="social-links">
-                        <a href="https://github.com/ghost-tech-alt" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
                         <a href="mailto:revtech.industries@outlook.com" class="social-link">
                             <i class="fas fa-envelope"></i>
                         </a>
