@@ -1043,6 +1043,62 @@ section {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.beta-warning {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    border: 2px solid #ffaa00;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 20px rgba(255, 170, 0, 0.3);
+}
+
+.warning-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.warning-content h3 {
+    color: white;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.warning-content p {
+    color: white;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.beta-badge {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 0.5rem;
+    border: 1px solid #ffaa00;
+}
+
+.beta-notice {
+    background: rgba(255, 107, 53, 0.1);
+    border: 1px solid #ff6b35;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    color: #ffaa00;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
 .download-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
