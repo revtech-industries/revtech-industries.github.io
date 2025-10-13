@@ -1241,6 +1241,126 @@ section {
     font-weight: 500;
 }
 
+/* Traction Section */
+.traction {
+    padding: 4rem 0;
+    background: var(--bg-primary);
+    color: white;
+}
+
+.traction .section-title {
+    color: white;
+    background: linear-gradient(45deg, #00f5ff, #ff0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.traction .section-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.traction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.traction-card {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.traction-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 245, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.traction-card:hover::before {
+    left: 100%;
+}
+
+.traction-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-glow);
+}
+
+.traction-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.traction-number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.traction-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.traction-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.traction-highlights {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 20px;
+    margin-top: 3rem;
+    border: 1px solid var(--border-color);
+}
+
+.traction-highlights h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.highlight-item {
+    background: var(--bg-primary);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 245, 255, 0.2);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.highlight-item strong {
+    color: var(--primary-color);
+}
+
 /* Testimonials Section */
 .testimonials {
     padding: 4rem 0;
