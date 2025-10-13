@@ -132,9 +132,31 @@
                 <div class="video-wrapper">
                     <!-- Choose one of the options below -->
                     
-                    <!-- Option 1: Direct MP4 file -->
-                    <video id="introVideo" class="intro-video" controls poster="images/artemis_logo.jpg">
+                    <!-- Option 1: Direct MP4 file with multiple formats and fallbacks -->
+                    <video id="introVideo" class="intro-video" controls poster="images/artemis_logo.jpg" preload="metadata">
                         <source src="videos/Artemis_Investor_Final.mp4" type="video/mp4">
+                        <!-- Fallback for older browsers -->
+                        <source src="videos/Artemis_Investor_Final.mp4" type="video/mp4; codecs=avc1.42E01E">
+                        <!-- Additional fallback content -->
+                        <div class="video-fallback">
+                            <div class="fallback-content">
+                                <div class="fallback-icon">🎥</div>
+                                <h3>Artemis AI Introduction Video</h3>
+                                <p>Your browser doesn't support video playback. Please try one of these alternatives:</p>
+                                <div class="fallback-options">
+                                    <a href="videos/Artemis_Investor_Final.mp4" class="btn btn-primary" download>
+                                        <i class="fas fa-download"></i> Download Video
+                                    </a>
+                                    <a href="https://youtube.com/watch?v=YOUR_VIDEO_ID" class="btn btn-secondary" target="_blank">
+                                        <i class="fab fa-youtube"></i> Watch on YouTube
+                                    </a>
+                                </div>
+                                <p class="fallback-note">
+                                    <i class="fas fa-info-circle"></i>
+                                    Video shows Artemis AI technology demonstration and company introduction
+                                </p>
+                            </div>
+                        </div>
                         Your browser does not support the video tag.
                     </video>
                     

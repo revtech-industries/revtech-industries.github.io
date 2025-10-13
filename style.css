@@ -534,6 +534,61 @@ body::before {
     border-radius: 20px;
 }
 
+/* Video Fallback Styles */
+.video-fallback {
+    background: var(--bg-secondary);
+    padding: 3rem 2rem;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.fallback-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.fallback-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.fallback-content h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.fallback-content p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.fallback-options {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.fallback-note {
+    background: var(--bg-primary);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fallback-note i {
+    color: var(--primary-color);
+}
+
 .video-overlay {
     position: absolute;
     top: 0;
