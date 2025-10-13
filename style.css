@@ -1907,6 +1907,46 @@ section {
     margin-bottom: 1.5rem;
 }
 
+/* Form Validation Styles */
+.field-error {
+    color: #ff6b35;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+.form-message {
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-weight: 500;
+    display: none;
+}
+
+.form-message.success {
+    background: rgba(0, 255, 136, 0.1);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.form-message.error {
+    background: rgba(255, 107, 53, 0.1);
+    border: 1px solid #ff6b35;
+    color: #ff6b35;
+}
+
+.form-group input:invalid,
+.form-group select:invalid,
+.form-group textarea:invalid {
+    border-color: #ff6b35;
+}
+
+.form-group input:valid,
+.form-group select:valid,
+.form-group textarea:valid {
+    border-color: var(--accent-color);
+}
+
 .form-group input,
 .form-group select,
 .form-group textarea {

@@ -400,17 +400,49 @@ document.addEventListener('DOMContentLoaded', function() {
     
     optimizePerformance();
     
-    // Contact form handling
+    // Enhanced Contact form handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
+        // Real-time validation
+        const inputs = contactForm.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                validateField(this);
+            });
+            
+            input.addEventListener('input', function() {
+                clearFieldError(this);
+            });
+        });
+
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
+            
+            // Validate all fields
+            let isValid = true;
+            inputs.forEach(input => {
+                if (!validateField(input)) {
+                    isValid = false;
+                }
+            });
+            
+            if (!isValid) {
+                showFormMessage('Please fix the errors above before submitting.', 'error');
+                return;
+            }
             
             const formData = new FormData(contactForm);
             const data = Object.fromEntries(formData);
             
-            // Create email body
-            const emailBody = `
+            // Show loading state
+            const button = contactForm.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            button.textContent = 'Sending...';
+            button.disabled = true;
+            
+            try {
+                // Create email body
+                const emailBody = `
 New Partnership Inquiry from REVTECH INDUSTRIES Website:
 
 Name: ${data.name}
@@ -423,26 +455,108 @@ ${data.message}
 
 ---
 Sent from REVTECH INDUSTRIES Portfolio Website
-            `;
-            
-            // Create mailto link
-            const mailtoLink = `mailto:warnecke.james@outlook.com?subject=REVTECH INDUSTRIES Partnership Inquiry - ${data.inquiry}&body=${encodeURIComponent(emailBody)}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Show success message
-            const button = contactForm.querySelector('button[type="submit"]');
-            const originalText = button.textContent;
-            button.textContent = 'Email Client Opened!';
-            button.style.background = 'var(--success-color)';
-            
-            setTimeout(() => {
+                `;
+                
+                // Create mailto link
+                const mailtoLink = `mailto:revtech.industries@outlook.com?subject=REVTECH INDUSTRIES Partnership Inquiry - ${data.inquiry}&body=${encodeURIComponent(emailBody)}`;
+                
+                // Open email client
+                window.location.href = mailtoLink;
+                
+                // Show success message
+                button.textContent = 'Email Client Opened!';
+                button.style.background = 'var(--accent-color)';
+                showFormMessage('Your email client should open with a pre-filled message. If it doesn\'t open, please email us directly at revtech.industries@outlook.com', 'success');
+                
+                // Reset form after delay
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    button.style.background = '';
+                    contactForm.reset();
+                    clearFormMessage();
+                }, 5000);
+                
+            } catch (error) {
+                console.error('Form submission error:', error);
                 button.textContent = originalText;
-                button.style.background = '';
-                contactForm.reset();
-            }, 3000);
+                button.disabled = false;
+                showFormMessage('There was an error sending your message. Please try again or email us directly at revtech.industries@outlook.com', 'error');
+            }
         });
+    }
+    
+    // Form validation functions
+    function validateField(field) {
+        const value = field.value.trim();
+        let isValid = true;
+        let errorMessage = '';
+        
+        // Clear previous error
+        clearFieldError(field);
+        
+        if (field.hasAttribute('required') && !value) {
+            isValid = false;
+            errorMessage = 'This field is required';
+        } else if (field.type === 'email' && value) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(value)) {
+                isValid = false;
+                errorMessage = 'Please enter a valid email address';
+            }
+        } else if (field.name === 'message' && value && value.length < 10) {
+            isValid = false;
+            errorMessage = 'Message must be at least 10 characters long';
+        }
+        
+        if (!isValid) {
+            showFieldError(field, errorMessage);
+        }
+        
+        return isValid;
+    }
+    
+    function showFieldError(field, message) {
+        field.style.borderColor = '#ff6b35';
+        
+        let errorElement = field.parentNode.querySelector('.field-error');
+        if (!errorElement) {
+            errorElement = document.createElement('div');
+            errorElement.className = 'field-error';
+            field.parentNode.appendChild(errorElement);
+        }
+        errorElement.textContent = message;
+    }
+    
+    function clearFieldError(field) {
+        field.style.borderColor = '';
+        const errorElement = field.parentNode.querySelector('.field-error');
+        if (errorElement) {
+            errorElement.remove();
+        }
+    }
+    
+    function showFormMessage(message, type) {
+        let messageElement = document.querySelector('.form-message');
+        if (!messageElement) {
+            messageElement = document.createElement('div');
+            messageElement.className = 'form-message';
+            contactForm.appendChild(messageElement);
+        }
+        
+        messageElement.textContent = message;
+        messageElement.className = `form-message ${type}`;
+        messageElement.style.display = 'block';
+        
+        // Scroll to message
+        messageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+    
+    function clearFormMessage() {
+        const messageElement = document.querySelector('.form-message');
+        if (messageElement) {
+            messageElement.style.display = 'none';
+        }
     }
     
     // Loading screen removed - website loads immediately
