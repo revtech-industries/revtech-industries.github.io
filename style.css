@@ -2462,30 +2462,63 @@ section {
 .hero-description,
 .logo-title,
 .logo-subtitle,
-.section-title {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+.section-title,
+h1, h2, h3, h4, h5, h6,
+p, span, div {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
     hyphens: auto;
+    max-width: 100% !important;
+    box-sizing: border-box;
 }
 
 /* Prevent text overflow on all text elements */
 * {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /* Ensure glitch effect works properly on mobile */
 .glitch {
     display: inline-block;
-    max-width: 100%;
+    max-width: 100% !important;
     overflow: hidden;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
 }
 
 .glitch::before,
 .glitch::after {
-    max-width: 100%;
+    max-width: 100% !important;
     overflow: hidden;
-    word-wrap: break-word;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Force text to wrap on mobile */
+@media (max-width: 768px) {
+    * {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        hyphens: auto !important;
+        max-width: 100% !important;
+    }
+    
+    .hero-title,
+    .hero-subtitle,
+    .hero-tagline,
+    .hero-description {
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow-wrap: anywhere !important;
+    }
+    
+    .glitch {
+        white-space: normal !important;
+        word-break: break-word !important;
+    }
 }
 
 /* Advanced Animations and Micro-interactions */
