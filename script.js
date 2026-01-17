@@ -161,26 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
         return re.test(email);
     }
     
-    // Smooth reveal animation for sections (excluding navbar)
-    const revealElements = document.querySelectorAll('section:not(.navbar)');
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, { threshold: 0.1 });
-    
-    revealElements.forEach(el => {
-        // Only apply transforms to sections, never to navbar
-        if (!el.classList.contains('navbar')) {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            revealObserver.observe(el);
-        }
-    });
+    // Smooth reveal animation DISABLED - was causing scroll movement issues
+    // Sections will display normally without transform animations
     
     // Add hover effects to project cards
     document.querySelectorAll('.project-card').forEach(card => {
