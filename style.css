@@ -74,13 +74,18 @@ body::before {
 .navbar {
     position: fixed !important;
     top: 0 !important;
-    width: 100%;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
     background: rgba(10, 10, 15, 0.95) !important;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
     box-shadow: 0 0 20px rgba(0, 245, 255, 0.2);
     z-index: 9999 !important; /* Ensure navbar is always on top */
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, box-shadow 0.3s ease !important; /* Only transition background, not position */
+    transform: none !important; /* Prevent any transforms */
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .navbar::before {

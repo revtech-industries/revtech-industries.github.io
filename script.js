@@ -161,8 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
         return re.test(email);
     }
     
-    // Smooth reveal animation for sections
-    const revealElements = document.querySelectorAll('section');
+    // Smooth reveal animation for sections (excluding navbar)
+    const revealElements = document.querySelectorAll('section:not(.navbar)');
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -173,10 +173,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { threshold: 0.1 });
     
     revealElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        revealObserver.observe(el);
+        // Only apply transforms to sections, never to navbar
+        if (!el.classList.contains('navbar')) {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            revealObserver.observe(el);
+        }
     });
     
     // Add hover effects to project cards
