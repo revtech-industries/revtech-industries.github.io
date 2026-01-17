@@ -129,14 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(typeWriter, 1000);
     }
     
-    // Parallax effect for hero section
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const hero = document.querySelector('.hero');
-        if (hero) {
-            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-        }
-    });
+    // Parallax effect removed - causing navbar overlap issues
     
     // Portfolio image lazy loading
     const portfolioImages = document.querySelectorAll('.portfolio-image img');
